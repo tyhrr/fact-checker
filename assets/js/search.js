@@ -403,6 +403,11 @@ class SearchEngine {
         const resultCard = this.createResultCard(article, results.query);
         resultsContainer.appendChild(resultCard);
       });
+
+      // Initialize tooltips for verified answer references
+      if (window.tippy) {
+        window.tippy('[data-tippy-content]', { theme: 'light-border', placement: 'top' });
+      }
       
       // Show/hide load more button
       if (loadMoreContainer) {
@@ -516,7 +521,7 @@ class SearchEngine {
       </div>
       
       <div class="result-meta">
-        <span class="article-number">${article.articleNumber}</span>
+        <span class="article-number" data-tippy-content="Article ${article.articleNumber} — open official source for full text">${article.articleNumber}</span>
         <span class="result-category">${categoryName}</span>
       </div>
       
