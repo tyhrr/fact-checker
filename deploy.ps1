@@ -72,18 +72,18 @@ Write-Host "   git commit -m `"Deploy Croatian Working Law Fact Checker`"" -Fore
 Write-Host "   git push origin main" -ForegroundColor White
 Write-Host ""
 Write-Host "3. 🔧 Enable GitHub Pages in repository settings:" -ForegroundColor Cyan
-Write-Host "   - Go to: https://github.com/tyhrr/fact-cheker-3/settings/pages" -ForegroundColor White
+Write-Host "   - Go to: https://github.com/tyhrr/fact-checker/settings/pages" -ForegroundColor White
 Write-Host "   - Select source: Deploy from a branch" -ForegroundColor White
 Write-Host "   - Select branch: main" -ForegroundColor White
 Write-Host "   - Select folder: / (root)" -ForegroundColor White
 Write-Host "   - Click Save" -ForegroundColor White
 Write-Host ""
 Write-Host "4. 🌐 Your app will be available at:" -ForegroundColor Cyan
-Write-Host "   https://tyhrr.github.io/fact-cheker-3/" -ForegroundColor Yellow
+Write-Host "   https://tyhrr.github.io/fact-checker/" -ForegroundColor Yellow
 Write-Host ""
 Write-Host "5. ⏱️  Deployment usually takes 5-10 minutes" -ForegroundColor Cyan
 Write-Host ""
-Write-Host "🔗 Repository: https://github.com/tyhrr/fact-cheker-3" -ForegroundColor Cyan
+Write-Host "🔗 Repository: https://github.com/tyhrr/fact-checker" -ForegroundColor Cyan
 Write-Host "📚 Documentation: README.md" -ForegroundColor Cyan
 Write-Host ""
 Write-Host "✨ Croatian Working Law Fact Checker ready for deployment!" -ForegroundColor Green

@@ -1,7 +1,7 @@
 # 🚀 Configuración de GitHub Pages para Croatian Working Law Fact Checker
 
 ## ✅ Estado del Proyecto
-- **Repositorio**: https://github.com/tyhrr/fact-cheker-3
+- **Repositorio**: https://github.com/tyhrr/fact-checker
 - **Archivos subidos**: ✅ Completado
 - **Base de datos**: ✅ 275 artículos procesados
 - **Aplicación**: ✅ Lista para desplegar
@@ -9,7 +9,7 @@
 ## 📋 Pasos para Habilitar GitHub Pages
 
 ### 1. Acceder a la Configuración
-Ve a: **https://github.com/tyhrr/fact-cheker-3/settings/pages**
+Ve a: **https://github.com/tyhrr/fact-checker/settings/pages**
 
 ### 2. Configurar la Fuente
 - **Source**: Selecciona "Deploy from a branch"
@@ -24,7 +24,7 @@ Ve a: **https://github.com/tyhrr/fact-cheker-3/settings/pages**
 
 ### 4. Acceder a tu Aplicación
 Una vez desplegada, estará disponible en:
-**https://tyhrr.github.io/fact-cheker-3/**
+**https://tyhrr.github.io/fact-checker/**
 
 ## 🔧 Configuración Opcional
 
@@ -71,7 +71,7 @@ GitHub Pages proporciona HTTPS automáticamente para:
 ## 📞 Soporte
 
 ### Enlaces Útiles
-- **Repositorio**: https://github.com/tyhrr/fact-cheker-3
+- **Repositorio**: https://github.com/tyhrr/fact-checker
 - **Documentación**: Revisa el README.md completo
 - **Issues**: Reporta problemas en GitHub Issues
 
@@ -89,4 +89,4 @@ Después de habilitar GitHub Pages, verifica que:
 
 Tu **Croatian Working Law Fact Checker** está listo para ser usado por abogados, trabajadores, empleadores y estudiantes de derecho de todo el mundo.
 
-**🌐 URL Final**: https://tyhrr.github.io/fact-cheker-3/
+**🌐 URL Final**: https://tyhrr.github.io/fact-checker/

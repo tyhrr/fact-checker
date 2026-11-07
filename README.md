@@ -9,8 +9,8 @@ The translations are here to help with reading, but they may not capture every l
 You’ll need Node.js 16 or newer and npm.
 
 ```bash
-git clone https://github.com/tyhrr/fact-cheker-3.git
-cd fact-cheker-3
+git clone https://github.com/tyhrr/fact-checker.git
+cd fact-checker
 npm install
 npm run dev
 ```

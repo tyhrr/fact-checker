@@ -4,7 +4,7 @@
 title: "Croatian Working Law Fact Checker"
 description: "Multilingual search engine for Croatian labor law with advanced features"
 url: "https://tyhrr.github.io"
-baseurl: "/fact-cheker-3"
+baseurl: "/fact-checker"
 
 # Build settings
 markdown: kramdown
