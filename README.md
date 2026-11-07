@@ -1,40 +1,45 @@
 # Croatian Working Law Fact Checker
 
-I made this site to make it easier to look up Croatian labor law. You can search the articles in Croatian, English, or Spanish, and switch between light and dark themes.
+A multilingual search tool for the Croatian labor law (Zakon o radu). Search articles in Croatian, English, or Spanish and read verified excerpts with relevance scoring and article references.
 
-The translations are here to help with reading, but they may not capture every legal detail. Check the Croatian text and current law before relying on anything here. This site isn't legal advice.
+Live: https://tyhrr.github.io/fact-checker
 
-## Run it locally
+## Features
 
-You’ll need Node.js 16 or newer and npm.
+- Search across Croatian labor law articles in 3 languages (hr/en/es).
+- Fuzzy suggestions powered by Fuse.js.
+- Verified badge on each result (checked against the official source).
+- Tooltips on article numbers (Tippy.js).
+- Light/dark theme, responsive layout.
+- Flat modern UI (replaced the old neomorphic style).
+
+## Run locally
 
 ```bash
 git clone https://github.com/tyhrr/fact-checker.git
 cd fact-checker
-npm install
-npm run dev
+# open index.html in your browser
 ```
 
-Open [http://localhost:3000](http://localhost:3000) if it doesn’t open automatically.
+## Project layout
 
-## Tests and other commands
-
-```bash
-npm test                 # Run the Jest tests
-npm run lint             # Check the JavaScript
-npm run validate         # Validate the data files
-node test-multilingual.js # Run the multilingual checks
+```
+fact-checker/
+├── index.html
+├── assets/
+│   ├── css/        # main.css, responsive.css, flat.css
+│   ├── js/         # search, database, relevance scoring, theme toggle
+│   └── data/       # law articles (JSON)
+├── tests/
+└── scripts/
 ```
 
-`npm run build` runs the PDF extraction, data generation, translation, and validation scripts. You can also use `npm run serve` to serve the site on port 8080.
+## Notes
 
-## What’s in the repo
+- Data sourced from the official Croatian labor law (zakon.hr).
+- For informational purposes only; not legal advice.
+- Plugins loaded via CDN: Fuse.js, Tippy.js, Marked.
 
-- `index.html` — the app
-- `assets/js/` — search, data loading, language detection, and theme code
-- `assets/data/` — Croatian law data and the multilingual data file
-- `assets/css/` — styles
-- `scripts/` — scripts for extracting and preparing the data
-- `tests/` — automated tests
+---
 
-For GitHub Pages setup, see [GITHUB-PAGES-SETUP.md](GITHUB-PAGES-SETUP.md).
+Built by Alan Salva. Feedback welcome.
