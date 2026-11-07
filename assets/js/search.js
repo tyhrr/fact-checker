@@ -62,7 +62,15 @@ class SearchEngine {
       
       // Initialize suggested searches
       this.initializeSuggestedSearches();
-      
+
+      // Initialize Fuse.js for fuzzy suggestions (if available)
+      if (window.Fuse) {
+        this.fuse = new window.Fuse(this.suggestions, {
+          keys: ['hr', 'en', 'es'],
+          threshold: 0.4
+        });
+      }
+
       this.isInitialized = true;
       console.log('✅ Search engine initialized successfully');
       
@@ -682,7 +690,16 @@ class SearchEngine {
     }
     
     try {
-      const suggestions = await window.Database.getSearchSuggestions(query, 5);
+      let suggestions = [];
+      if (this.fuse) {
+        suggestions = this.fuse.search(query).map(r => r.item).slice(0, 5);
+        // flatten to strings in current language
+        const lang = window.LanguageManager ? window.LanguageManager.getCurrentLanguage() : 'en';
+        suggestions = suggestions.map(s => s[lang] || s.en || s.hr).filter(Boolean);
+      }
+      if (suggestions.length === 0) {
+        suggestions = await window.Database.getSearchSuggestions(query, 5);
+      }
       this.displaySuggestions(suggestions);
     } catch (error) {
       console.error('Failed to get suggestions:', error);
