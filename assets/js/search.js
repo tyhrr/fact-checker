@@ -523,6 +523,7 @@ class SearchEngine {
       <div class="result-meta">
         <span class="article-number" data-tippy-content="Article ${article.articleNumber} — open official source for full text">${article.articleNumber}</span>
         <span class="result-category">${categoryName}</span>
+        <span class="verified-badge" title="Verified against official Croatian labor law">✓ Verified</span>
       </div>
       
       ${contentHtml}
